@@ -1,0 +1,24 @@
+/*author:Avroneel*/
+#include<iostream>
+using namespace std;
+template<class T>
+class avijit{
+  public:
+    T data1;
+    T data2;
+   avijit(T a,T b)  {
+    this->data1=a;
+    this->data2=b;
+  }
+  void display();
+};
+template<class T>
+void avijit<T>::display(){
+  cout<<data1<<endl<<data2;
+}
+
+int main(){
+  avijit<float> a(1.2,2.3);
+  a.display();
+  return 0;
+}
