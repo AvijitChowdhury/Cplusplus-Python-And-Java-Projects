@@ -1,0 +1,24 @@
+/*author:avroneel*/
+#include<iostream>
+using namespace std;
+// template<class T>
+// T add(T x,T y){return x+y;}
+template<int s>
+class storage{
+  private:
+  int store[s];
+
+};
+
+
+int main(){
+  /*
+   cout<<add(1,3)<<endl;
+  cout<<add<float>(1.5,4.5)<<endl;
+  cout<<add<string>("avaiji","aviji");
+
+
+  return 0;
+
+  storage<5> store;
+}
