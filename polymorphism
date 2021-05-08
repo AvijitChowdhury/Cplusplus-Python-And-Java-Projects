@@ -1,0 +1,40 @@
+/*author:Avroneel*/
+#include <iostream>
+#include <iterator>
+#include <list>
+
+using namespace std;
+class student {
+private:
+  string name;
+  int age;
+
+public:
+  student(string namevalue, int agevalue) {
+    name = namevalue;
+    age = agevalue;
+  }
+  void printdata() {
+    cout << "name: " << name << endl << "age: " << age << endl;
+  }
+};
+class school {
+private:
+  list<student> student;
+
+public:
+  list<student> getstudents() { return students; }
+  void addstudent() { students.push_back(student); }
+};
+void main() {
+school school;
+string names[5] = {"avi","arko","antick","ayon"};
+int ages[5]={12,343,45,56,56};
+for (int i=0;i<5;i++){
+  student student(name[i],age[i]);
+  school.addstudent(student);
+}
+list<student>students=school.getstudents();
+// cout<<"total students"<<student.size()<<endl;
+
+}
