@@ -1,0 +1,19 @@
+ #include<iostream>
+using namespace std;
+
+ int main(){
+int marks[6]={1,2,34,4,5,3};
+    int *p=marks;  
+    cout<<"marks of [0]"<<*p<<endl;
+    cout<<"marks of [1]"<<*(p+1)<<endl;
+     cout<<"marks of [1]"<<*(p+2)<<endl;
+     cout<<"marks of [02]"<<*(p+3)<<endl;
+     cout<<"marks of [3]"<<*(p+4)<<endl;
+     cout<<"marks of [4]"<<*(p+5)<<endl;
+     cout<<"marks of [5]"<<*(p+6)<<endl;
+
+     cout<<"marks of [4]"<<*(p++)<<endl;
+     cout<<"marks of [4]"<<*(p++)<<endl;  
+     cout<<"marks of [4]"<<*(p++)<<endl;
+     return 0;
+ }
