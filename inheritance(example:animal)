@@ -1,0 +1,58 @@
+/*author:avroneel*/
+#include <iostream>
+#include <string>
+using namespace std;
+class animal {
+// private:
+//   string name;
+//   int age;
+
+public:
+string nam;
+int ag;
+  ani(string name, int age) {
+    this->nam = name;
+    this->ag = age;
+    
+}
+
+  string getname()
+   { 
+       return nam;
+}
+  age() {
+       return ag;
+        }
+  getsummary() {
+    cout << "name: " << this->getname() <<endl<< "age: " << this->age();
+  }
+};
+class child:public animal{
+  public:
+  string sound;
+   ani(string name, int age,string soun) {
+    this->nam = name;
+    this->ag = age;
+    this->sound=soun;
+    
+}
+ getsummary() {
+    cout << "name: " << this->getname() <<endl<< "age: " << this->age()<<"sound: "<<sound;
+  }
+  
+
+};
+
+
+ int main() {
+   animal a;
+   a.ani("avijit", 12);
+   a.getname();
+   a.age();
+   a.getsummary();
+   child b;
+   b.ani("dog",23,"vow");
+   b.getsummary();
+
+   return 0;
+ }
