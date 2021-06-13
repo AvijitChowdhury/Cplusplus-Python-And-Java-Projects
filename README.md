@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hi i'm Avijit 👋
 
 <!--
 **Avroneel/Avroneel** 
