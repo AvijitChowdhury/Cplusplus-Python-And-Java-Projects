@@ -1,8 +1,7 @@
 /*
 snake game 
-author-SKD
-2013
-
+author-Avijit Chowdhury
+2021
 */
 #include <iostream>
 #include <windows.h>
